@@ -104,3 +104,19 @@
   letter-spacing: -0.59px;
   color: #19191b;
 }
+
+/* Slider Component Styles */
+.slider {
+  text-align: start;
+  width: 25.75rem;
+  height: 14.188rem;
+  padding: 1.438rem 1.563rem 1.563rem 1.5rem;
+  border-radius: 9px;
+  border: solid 0.9px #eae9f2;
+  color: white;
+  overflow: hidden;
+}
+.slider_Image {
+  width: 2rem;
+  height: 2rem;
+}

@@ -3,19 +3,22 @@ export const aboutUs_Info = [
     img: 'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/b54a04bc-b2a8-4a41-a37b-ab0e60ffb744',
     title: 'Multiple Layouts',
     class: 'lightRed',
-    description: 'With lots of unique blocks, you can easily build a page without coding.',
+    description:
+      'With lots of unique blocks, you can easily build a page without coding.',
   },
   {
     img: 'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/7c7ebb44-6c3c-42ed-932c-243d2a946060',
     title: 'Fully Responsive',
     class: 'lightViolet',
-    description: 'With lots of unique blocks, you can easily build a page without coding.',
+    description:
+      'With lots of unique blocks, you can easily build a page without coding.',
   },
   {
     img: 'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/3b3b8b0d-7ae4-4bfc-8627-6ee4609292c7',
     title: 'Great Support',
     class: 'lightGrey',
-    description: 'With lots of unique blocks, you can easily build a page without coding.',
+    description:
+      'With lots of unique blocks, you can easily build a page without coding.',
   },
 ]
 
@@ -86,5 +89,32 @@ export const features_Info = [
     title: 'Save tons of time on design & coding.',
     para: 'Create custom landing pages with Omega that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.',
     text: 'Get Started',
+  },
+]
+
+export const slider_Info = [
+  {
+    para: 'OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.',
+    img: 'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/9cee7336-e22f-4962-9aec-154150410fdb',
+    name: 'Jonathan Taylor',
+    designation: 'CEO at Creativex',
+  },
+  {
+    para: 'OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.',
+    img: 'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/29b10508-1c03-4aa9-bb74-cf01fe5f4ea3',
+    name: 'Marie Stanley',
+    designation: 'Digital Marketer, Writer',
+  },
+  {
+    para: 'OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.',
+    img: 'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/9cee7336-e22f-4962-9aec-154150410fdb',
+    name: 'Jonathan Taylor',
+    designation: 'CEO at Creativex',
+  },
+  {
+    para: 'OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.',
+    img: 'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/29b10508-1c03-4aa9-bb74-cf01fe5f4ea3',
+    name: 'Marie Stanley',
+    designation: 'Digital Marketer, Writer',
   },
 ]

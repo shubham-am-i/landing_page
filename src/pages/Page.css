@@ -168,3 +168,14 @@
   left: -4.3rem;
   bottom: 4rem;
 }
+
+/* Reviews Section */
+.reviews_Container {
+  text-align: center;
+  padding: 5.063rem 18.375rem 6.938rem 18.313rem;
+  background-color: #f7f7fb;
+}
+.reviews_Para {
+  padding: 0 11rem;
+  margin-bottom: 2rem !important;
+}
