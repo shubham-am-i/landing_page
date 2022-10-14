@@ -18,3 +18,9 @@ export const aboutus_Image =
 
 export const aboutus_oval =
   'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/94a54e76-ac9e-49dc-ad50-7f5e6ac693ee'
+
+export const features_Image =
+  'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/15a3df80-ef77-42ce-89ad-a2ff98ecb71d'
+
+export const features_Oval =
+  'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/cbf9c4d6-21cd-413d-ba2a-911e8fcce486'

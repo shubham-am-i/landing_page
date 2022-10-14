@@ -7,16 +7,18 @@ import Button from 'components/Button'
 import Header from 'components/Header'
 import Input from 'components/Input'
 import { H1, H6, H7, Para, Text } from 'components/Typography'
-// Image import
+// Seeder imports
 import {
   aboutUs_Content1,
   aboutUs_Content2,
   aboutUs_Info,
+  features_Info,
   services_Info1,
   services_Info2,
   services_Info3,
 } from 'utils/Seeder'
-import { aboutus_Image, aboutus_oval } from 'utils/ImagesPath'
+// Image import
+import { aboutus_Image, aboutus_oval, features_Image, features_Oval } from 'utils/ImagesPath'
 
 const LandingPage = () => {
   return (
@@ -124,6 +126,23 @@ const LandingPage = () => {
               <H7>{paper.title}</H7>
             </Stack>
           ))}
+        </Box>
+      </Stack>
+
+      {/* features Section */}
+      <Stack direction="row" className="features_Container">
+        <Stack className="features_Stack" spacing={3.5}>
+          {features_Info.map(item => (
+            <>
+              <H1>{item.title}</H1>
+              <Para>{item.para}</Para>
+              <Button>{item.text}</Button>
+            </>
+          ))}
+        </Stack>
+        <Box className="features_Box">
+          <img src={features_Image} alt="features" className="features_Image" />
+          <img src={features_Oval} alt="oval-img" className="features_Oval"></img>
         </Box>
       </Stack>
     </>

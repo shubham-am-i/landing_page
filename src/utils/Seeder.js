@@ -80,3 +80,11 @@ export const services_Info3 = [
     title: 'Rich Documentation',
   },
 ]
+
+export const features_Info = [
+  {
+    title: 'Save tons of time on design & coding.',
+    para: 'Create custom landing pages with Omega that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.',
+    text: 'Get Started',
+  },
+]
