@@ -48,7 +48,7 @@
 
 /********************** Header Section *******************/
 .header {
-  position: fixed;
+  position: absolute;
   top: 1.13rem;
   left: 2rem;
   color: #19191b !important;
@@ -95,5 +95,12 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.68px;
+  color: #19191b;
+}
+
+.H7 {
+  font-family: CircularStd-Bold;
+  font-size: 1.181rem;
+  letter-spacing: -0.59px;
   color: #19191b;
 }

@@ -13,7 +13,8 @@ export const sidebar =
 export const chat_content =
   'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/3b3b8b0d-7ae4-4bfc-8627-6ee4609292c7'
 
-export const aboutus_Image1 =
+export const aboutus_Image =
   'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/c0b646ad-8411-46d0-b1bc-03f44deaccbf'
 
-export const aboutus_Image2 = ''
+export const aboutus_oval =
+  'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/94a54e76-ac9e-49dc-ad50-7f5e6ac693ee'

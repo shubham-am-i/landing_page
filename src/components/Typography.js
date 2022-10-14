@@ -16,3 +16,7 @@ export const H6 = props => {
   const { children, className } = props
   return <h1 className={`H6 ${className}`}>{children}</h1>
 }
+export const H7 = props => {
+  const { children, className } = props
+  return <h1 className={`H7 ${className}`}>{children}</h1>
+}

@@ -6,9 +6,17 @@ import './Page.css'
 import Button from 'components/Button'
 import Header from 'components/Header'
 import Input from 'components/Input'
-import { H1, H6, Para, Text } from 'components/Typography'
+import { H1, H6, H7, Para, Text } from 'components/Typography'
 // Image import
-import { aboutUs_Content1, aboutUs_Info } from 'utils/Seeder'
+import {
+  aboutUs_Content1,
+  aboutUs_Content2,
+  aboutUs_Info,
+  services_Info1,
+  services_Info2,
+  services_Info3,
+} from 'utils/Seeder'
+import { aboutus_Image, aboutus_oval } from 'utils/ImagesPath'
 
 const LandingPage = () => {
   return (
@@ -31,7 +39,7 @@ const LandingPage = () => {
       </Box>
 
       {/* About us 1 */}
-      <Stack direction="row" className="aboutUs1_Left">
+      <Stack direction="row" className="aboutUs1_Container">
         <Stack spacing={3} className="paperContainer">
           {aboutUs_Info.map((paper, index) => (
             <Box key={index} className="paper">
@@ -56,6 +64,67 @@ const LandingPage = () => {
             </>
           ))}
         </Stack>
+      </Stack>
+
+      {/* About us 2 */}
+      <Stack className="aboutUs2_Container" direction="row">
+        <Stack className="aboutUs2_Left" spacing={3.5}>
+          {aboutUs_Content2.map(item => (
+            <>
+              <H1>{item.title}</H1>
+              <Para>{item.para}</Para>
+              <Button>{item.text}</Button>
+            </>
+          ))}
+        </Stack>
+        <Box className="aboutus2_Box">
+          <img src={aboutus_Image} alt="about company" className="aboutus2_Image" />
+          <img src={aboutus_oval} alt="oval-img" className="aboutus_Oval"></img>
+        </Box>
+      </Stack>
+
+      {/* Services Section */}
+      <Stack className="services" spacing={4}>
+        <H1 className="services_Title">It’s everything you’ll ever need</H1>
+
+        <Box className="flexContainer1">
+          {services_Info1.map((paper, index) => (
+            <Stack key={index} direction="row" spacing={2} className="services_Paper">
+              <Box className={`${paper.class} lightParent`}>
+                <img src={paper.img} alt="layout" />
+              </Box>
+
+              <H7>{paper.title}</H7>
+            </Stack>
+          ))}
+        </Box>
+        <Stack className="flexContainer2" direction="row" spacing={3}>
+          {services_Info2.map((paper, index) => (
+            <Stack
+              key={index}
+              direction="row"
+              spacing={2}
+              className={`services_Paper child${index}`}
+            >
+              <Box className={`${paper.class} lightParent`}>
+                <img src={paper.img} alt="layout" />
+              </Box>
+
+              <H7>{paper.title}</H7>
+            </Stack>
+          ))}
+        </Stack>
+        <Box className="flexContainer1">
+          {services_Info3.map((paper, index) => (
+            <Stack key={index} direction="row" spacing={2} className="services_Paper">
+              <Box className={`${paper.class} lightParent`}>
+                <img src={paper.img} alt="layout" />
+              </Box>
+
+              <H7>{paper.title}</H7>
+            </Stack>
+          ))}
+        </Box>
       </Stack>
     </>
   )

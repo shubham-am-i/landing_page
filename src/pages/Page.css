@@ -31,7 +31,7 @@
 }
 
 /* About Us 1 */
-.aboutUs1_Left {
+.aboutUs1_Container {
   background-color: var(--background1);
 }
 .paperContainer {
@@ -62,6 +62,12 @@
 .lightGrey {
   background-color: var(--lightGrey);
 }
+.lightYellow {
+  background-color: rgba(254, 220, 90, 0.1);
+}
+.lightGreen {
+  background-color: rgba(119, 191, 65, 0.1);
+}
 .aboutUs1_Right {
   padding-top: 12.438rem;
   padding-right: 15.813rem;
@@ -72,4 +78,70 @@
 }
 .textSecondary {
   color: var(--textSecondary) !important;
+}
+
+/* About us 2 */
+.aboutUs2_Container {
+  background-color: var(--textPrimary);
+}
+
+.aboutUs2_Left {
+  width: 60%;
+  padding: 8rem 4rem 8rem 13.894rem;
+}
+
+.aboutus2_Box {
+  position: relative;
+  box-sizing: border-box;
+}
+.aboutus2_Image {
+  object-fit: scale-down;
+}
+.aboutus_Oval {
+  position: absolute;
+  left: -8.3rem;
+  bottom: 0;
+}
+
+/* Services  */
+.services {
+  text-align: center;
+  background-color: #f7f7fb;
+  padding: 6% 15% 6% 15%;
+}
+.services_Title {
+  width: 40%;
+  margin-left: 29%;
+}
+.services_Paper {
+  width: 19.563rem;
+  height: 4.5rem;
+  padding: 0.75rem 0.688rem 0.625rem 0.875rem;
+  border-radius: 9px;
+  border: solid 0.9px #eae9f2;
+  background-color: #fff;
+  align-items: center;
+}
+.lightParent {
+  width: 2.475rem;
+  height: 2.475rem;
+  padding: 1.188rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.flexContainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flexContainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 5.5rem;
+}
+.child1 {
+  box-shadow: 0 36px 44px -25px rgb(83, 85, 112);
 }
