@@ -1,0 +1,21 @@
+.mainContainer {
+  margin-left: 13.563rem;
+  margin-right: 15.769rem;
+}
+
+/* Hero Section */
+.heroBox {
+  background: url('https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/a1a96c5b-b124-4f84-b3e9-1ce6b42eda7b');
+  height: 100vh;
+}
+.heroStack {
+  padding: 13.125rem 46rem 13.5rem 13.563rem;
+}
+.heroInputBox {
+  position: relative;
+}
+.heroButton {
+  position: absolute;
+  top: 0.34rem;
+  right: 0.5rem;
+}

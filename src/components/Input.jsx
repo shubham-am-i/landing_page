@@ -5,24 +5,16 @@ import { useState } from 'react'
 import { PropTypes } from 'prop-types'
 
 // local import
-import './Input.css'
+import './styles.css'
+import { email } from 'utils/ImagesPath'
 
 const Input = props => {
-  const {
-    title,
-    placeholder,
-    defaultText,
-    isDisabled,
-    size,
-    isRequired,
-    description,
-    icon,
-    className,
-  } = props
+  const { title, placeholder, defaultText, isDisabled, size, isRequired, description, className } =
+    props
   const [text, setText] = useState(defaultText)
 
   const disabled = isDisabled === true ? true : false
-  const inputSize = size === 'small' ? 'small_size' : 'large_size'
+  // const inputSize = size === 'small' ? 'small_size' : 'large_size'
   const required = isRequired === true ? true : false
 
   const handleText = e => setText(e.target.value)
@@ -32,6 +24,7 @@ const Input = props => {
         {title}
 
         <section className="section">
+          <img src={email} alt="email" className="email-84" />
           <input
             type={text.length ? 'search' : 'text'}
             value={text}
@@ -41,8 +34,6 @@ const Input = props => {
             required={required}
             onChange={handleText}
           />
-
-          {text.length ? null : <span className={`${inputSize}_iconStyles`}>{icon}</span>}
         </section>
         {description && <p>{description}</p>}
       </label>
@@ -62,7 +53,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   title: '',
-  placeholder: 'Label',
+  placeholder: 'Email Address',
   isDisabled: false,
   defaultText: '',
   size: 'large',
