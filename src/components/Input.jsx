@@ -53,7 +53,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   title: '',
-  placeholder: 'Email Address',
+  placeholder: 'Email address',
   isDisabled: false,
   defaultText: '',
   size: 'large',

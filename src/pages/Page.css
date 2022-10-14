@@ -1,3 +1,12 @@
+:root {
+  --background1: #413e65;
+  --lightRed: rgba(240, 64, 55, 0.1);
+  --lightViolet: rgba(84, 84, 212, 0.1);
+  --lightGrey: rgba(65, 62, 101, 0.1);
+  --textPrimary: white;
+  --textSecondary: rgba(255, 255, 255, 0.7);
+}
+
 .mainContainer {
   margin-left: 13.563rem;
   margin-right: 15.769rem;
@@ -6,10 +15,11 @@
 /* Hero Section */
 .heroBox {
   background: url('https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/a1a96c5b-b124-4f84-b3e9-1ce6b42eda7b');
-  height: 100vh;
+  background-repeat: no-repeat;
 }
 .heroStack {
-  padding: 13.125rem 46rem 13.5rem 13.563rem;
+  /* padding: 13.125rem 46rem 13.5rem 13.563rem; */
+  padding: 14% 50.7% 14% 15%;
 }
 .heroInputBox {
   position: relative;
@@ -18,4 +28,48 @@
   position: absolute;
   top: 0.34rem;
   right: 0.5rem;
+}
+
+/* About Us 1 */
+.aboutUs1_Left {
+  background-color: var(--background1);
+}
+.paperContainer {
+  padding: 8.563rem 0 8.5rem 13.813rem;
+}
+.paper {
+  width: 21.875rem;
+  height: 8.688rem;
+  padding: 1.438rem 1.125rem 1.688rem 1.563rem;
+  border-radius: 9px;
+  background-color: #fff;
+}
+.light {
+  width: 3.475rem;
+  height: 3.475rem;
+  padding: 1.188rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.lightRed {
+  background-color: var(--lightRed);
+}
+.lightViolet {
+  background-color: var(--lightViolet);
+}
+.lightGrey {
+  background-color: var(--lightGrey);
+}
+.aboutUs1_Right {
+  padding-top: 12.438rem;
+  padding-right: 15.813rem;
+  padding-left: 8.5rem;
+}
+.textPrimary {
+  color: var(--textPrimary) !important;
+}
+.textSecondary {
+  color: var(--textSecondary) !important;
 }
