@@ -118,3 +118,11 @@ export const slider_Info = [
     designation: 'Digital Marketer, Writer',
   },
 ]
+
+export const startedNow = [
+  {
+    title: 'Get Started Now',
+    para: 'Create custom landing pages with Omega that converts more visitors than any website. With lots of unique blocks, you can easily build a page without coding.',
+    text: 'Get Started',
+  },
+]

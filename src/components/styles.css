@@ -8,7 +8,7 @@
 .Input {
   width: 30.313rem;
   height: 4rem;
-  padding: 0.313rem 0.313rem 0.313rem 3.43rem;
+  padding: 0.313rem 0.313rem 0.313rem 0.43rem;
   border-radius: 9px;
   border: solid 0.9px #eae9f2;
   background-color: #fff;
@@ -86,6 +86,16 @@
   letter-spacing: -0.45px;
   color: #696871;
 }
+.Text1 {
+  font-family: CircularStd-Bold;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: -0.45px;
+  color: #696871;
+}
 
 .H6 {
   font-family: CircularStd-Bold;
@@ -108,8 +118,6 @@
 /* Slider Component Styles */
 .slider {
   text-align: start;
-  width: 25.75rem;
-  height: 14.188rem;
   padding: 1.438rem 1.563rem 1.563rem 1.5rem;
   border-radius: 9px;
   border: solid 0.9px #eae9f2;
@@ -119,4 +127,17 @@
 .slider_Image {
   width: 2rem;
   height: 2rem;
+}
+.innerStack {
+  align-items: center;
+}
+
+/* Footer*/
+.footer_Container {
+  padding: 5.75rem 16.188rem 7.625rem 13.813rem;
+  color: black !important;
+  background-color: white;
+}
+.footerText {
+  width: 11rem;
 }

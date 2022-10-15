@@ -16,6 +16,8 @@ import {
   services_Info1,
   services_Info2,
   services_Info3,
+  started,
+  startedNow,
 } from 'utils/Seeder'
 // Image import
 import {
@@ -23,8 +25,11 @@ import {
   aboutus_oval,
   features_Image,
   features_Oval,
+  started_Now,
+  started_Oval,
 } from 'utils/ImagesPath'
 import Carousel from 'components/Carousel'
+import Footer from 'components/Footer'
 
 const LandingPage = () => {
   return (
@@ -41,7 +46,7 @@ const LandingPage = () => {
             page without coding.
           </Para>
           <Box className='heroInputBox'>
-            <Input />
+            <Input className='textalign' />
             <Button className='heroButton'>Get Started</Button>
           </Box>
         </Stack>
@@ -178,8 +183,36 @@ const LandingPage = () => {
           Create custom landing pages with Omega that converts more visitors
           than any website.
         </Para>
+        {/* Carousel Component */}
         <Carousel />
       </Stack>
+
+      {/* Get Started Now Section */}
+      <Stack direction='row' className='startedNow_Container'>
+        <Box className='startedNow_Box'>
+          <img
+            src={started_Now}
+            alt='static pic'
+            className='startedNow_Image'
+          />
+          <img
+            src={started_Oval}
+            alt='oval-img'
+            className='startedNow_Oval'
+          ></img>
+        </Box>
+        {startedNow.map((item) => (
+          <Stack className='startedNow_Stack' spacing={3}>
+            <H1 className='textPrimary'>{item.title}</H1>
+            <Para className='textSecondary textWidth'>{item.para}</Para>
+            <Input className='fieldWidth' />
+            <Button className='fieldWidth'>{item.text}</Button>
+          </Stack>
+        ))}
+      </Stack>
+
+      {/*  Footer Section*/}
+      <Footer />
     </>
   )
 }

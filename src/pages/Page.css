@@ -29,6 +29,9 @@
   top: 0.34rem;
   right: 0.5rem;
 }
+.textalign {
+  padding-left: 3.43rem !important;
+}
 
 /* About Us 1 */
 .aboutUs1_Container {
@@ -178,4 +181,32 @@
 .reviews_Para {
   padding: 0 11rem;
   margin-bottom: 2rem !important;
+}
+
+/* Get Started Now Section */
+.startedNow_Container {
+  background-color: var(--background1);
+  padding: 7.75rem 16.188rem 7.625rem 13.813rem;
+}
+.startedNow_Box {
+  position: relative;
+}
+
+.startedNow_Oval {
+  position: absolute;
+  top: 7.063rem;
+  left: 11.638rem;
+}
+
+/* Right Stack */
+.startedNow_Stack {
+  margin: 3rem 6.25rem 0 9rem;
+}
+.textWidth {
+  width: 29.063rem !important;
+}
+.fieldWidth {
+  width: 25.063rem !important;
+  text-align: center;
+  border-radius: 9px !important;
 }

@@ -50,7 +50,7 @@ const Carousel = () => {
         {slider_Info.map((slide, index) => (
           <Stack className='slider' spacing={3}>
             <Para>{slide.para}</Para>
-            <Stack direction='row' spacing={2}>
+            <Stack direction='row' spacing={2} className='innerStack'>
               <img src={slide.img} alt='slide-img' className='slider_Image' />
               <Box>
                 <H7>{slide.name}</H7>
