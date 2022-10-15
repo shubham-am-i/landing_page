@@ -33,4 +33,78 @@
   .aboutUs1_Right {
     padding: 1rem 1.55rem;
   }
+
+  /* About Us 2 */
+  .aboutUs2_Left {
+    width: 100%;
+    padding: 18% 6% 10% 6%;
+  }
+  .aboutus2_Image {
+    width: 100%;
+  }
+
+  /* Services  */
+  .services {
+    padding: 10% 6%;
+  }
+  .services_Title {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 1rem;
+  }
+  .flexContainer1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .flexContainer2 {
+    padding-left: 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .services_Paper {
+    margin-bottom: 1rem;
+  }
+  .child1 {
+    margin-left: 0rem;
+  }
+  /* Features Container */
+  .features_Container {
+    padding: 13% 6%;
+  }
+  .features_Stack {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+  .features_Box {
+    position: relative;
+    padding-top: 0rem;
+    box-sizing: border-box;
+  }
+  .features_Image {
+    width: 100%;
+  }
+
+  /* Reviews Section */
+  .reviews_Container {
+    padding: 15% 6%;
+  }
+  .reviews_Para {
+    padding: 0;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Get Started Now Section */
+  .startedNow_Container {
+    padding: 12% 6%;
+  }
+  .startedNow_Stack {
+    margin: 0;
+    padding: 6%;
+  }
+  .textWidth {
+    width: 20rem !important;
+  }
+  .fieldWidth {
+    width: 20rem !important;
+  }
 }

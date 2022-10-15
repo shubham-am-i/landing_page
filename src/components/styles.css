@@ -136,9 +136,16 @@
 /* Footer*/
 .footer_Container {
   padding: 5.75rem 16.188rem 7.625rem 13.813rem;
-  color: black !important;
   background-color: white;
 }
 .footerText {
   width: 11rem;
+}
+@media (min-width: 320px) and (max-width: 481px) {
+  .footer_Container {
+    padding: 10% 10%;
+  }
+  .footerText {
+    width: 80%;
+  }
 }

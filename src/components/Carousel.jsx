@@ -9,12 +9,16 @@ import { slider_Info } from 'utils/Seeder'
 import { H7, Para, Text } from './Typography'
 import { Box } from '@mui/material'
 
+// Local import
+import useMediaQueries from 'hooks/useMediaQueries'
+
 const Carousel = () => {
+  const isMobile = useMediaQueries('mobile')
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: isMobile ? 1 : 2,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [

@@ -50,7 +50,10 @@ const LandingPage = () => {
             page without coding.
           </Para>
           <Box className='heroInputBox'>
-            <Input className='textalign' />
+            <Input
+              className='textalign'
+              direction={isMobile ? 'column' : 'row'}
+            />
             <Button className='heroButton'>Get Started</Button>
           </Box>
         </Stack>
@@ -100,7 +103,10 @@ const LandingPage = () => {
       </Stack>
 
       {/* About us 2 */}
-      <Stack className='aboutUs2_Container' direction='row'>
+      <Stack
+        className='aboutUs2_Container'
+        direction={isMobile ? 'column-reverse' : 'row'}
+      >
         <Stack className='aboutUs2_Left' spacing={3.5}>
           {aboutUs_Content2.map((item) => (
             <>
@@ -116,12 +122,18 @@ const LandingPage = () => {
             alt='about company'
             className='aboutus2_Image'
           />
-          <img src={aboutus_oval} alt='oval-img' className='aboutus_Oval'></img>
+          {!isMobile && (
+            <img
+              src={aboutus_oval}
+              alt='oval-img'
+              className='aboutus_Oval'
+            ></img>
+          )}
         </Box>
       </Stack>
 
       {/* Services Section */}
-      <Stack className='services' spacing={4}>
+      <Stack className='services' spacing={isMobile ? 0 : 4}>
         <H1 className='services_Title'>It’s everything you’ll ever need</H1>
 
         <Box className='flexContainer1'>
@@ -140,7 +152,7 @@ const LandingPage = () => {
             </Stack>
           ))}
         </Box>
-        <Stack className='flexContainer2' direction='row' spacing={3}>
+        <Box className='flexContainer2' direction='row'>
           {services_Info2.map((paper, index) => (
             <Stack
               key={index}
@@ -155,7 +167,7 @@ const LandingPage = () => {
               <H7>{paper.title}</H7>
             </Stack>
           ))}
-        </Stack>
+        </Box>
         <Box className='flexContainer1'>
           {services_Info3.map((paper, index) => (
             <Stack
@@ -175,7 +187,10 @@ const LandingPage = () => {
       </Stack>
 
       {/* features Section */}
-      <Stack direction='row' className='features_Container'>
+      <Stack
+        direction={isMobile ? 'column-reverse' : 'row'}
+        className='features_Container'
+      >
         <Stack className='features_Stack' spacing={3.5}>
           {features_Info.map((item) => (
             <>
@@ -187,11 +202,9 @@ const LandingPage = () => {
         </Stack>
         <Box className='features_Box'>
           <img src={features_Image} alt='features' className='features_Image' />
-          <img
-            src={features_Oval}
-            alt='oval-img'
-            className='features_Oval'
-          ></img>
+          {!isMobile && (
+            <img src={features_Oval} alt='oval-img' className='features_Oval' />
+          )}
         </Box>
       </Stack>
 
@@ -207,18 +220,23 @@ const LandingPage = () => {
       </Stack>
 
       {/* Get Started Now Section */}
-      <Stack direction='row' className='startedNow_Container'>
+      <Stack
+        direction={isMobile ? 'column' : 'row'}
+        className='startedNow_Container'
+      >
         <Box className='startedNow_Box'>
           <img
             src={started_Now}
             alt='static pic'
             className='startedNow_Image'
           />
-          <img
-            src={started_Oval}
-            alt='oval-img'
-            className='startedNow_Oval'
-          ></img>
+          {!isMobile && (
+            <img
+              src={started_Oval}
+              alt='oval-img'
+              className='startedNow_Oval'
+            />
+          )}
         </Box>
         {startedNow.map((item) => (
           <Stack className='startedNow_Stack' spacing={3}>
