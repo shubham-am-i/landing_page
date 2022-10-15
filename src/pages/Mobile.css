@@ -1,0 +1,36 @@
+/* Media queries for Mobile Devices */
+@media (min-width: 320px) and (max-width: 481px) {
+  /* Hero Section */
+  .heroBox {
+    padding: 20% 0;
+  }
+  .heroStack {
+    padding: 18% 6% 10% 6%;
+  }
+  .textalign {
+    padding-left: 7.53rem !important;
+    width: 21.513rem !important;
+    width: 98% !important;
+  }
+  .heroButton {
+    width: 98% !important;
+    top: 5rem;
+    border-radius: 9px !important;
+  }
+
+  /* About Us 1 */
+  .aboutUs1_Container {
+    padding: 6% 0;
+  }
+  .paperContainer {
+    padding: 10% 10%;
+  }
+  .paper {
+    width: 19.875rem;
+    height: 7.688rem;
+    padding: 1rem;
+  }
+  .aboutUs1_Right {
+    padding: 1rem 1.55rem;
+  }
+}

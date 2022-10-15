@@ -2,11 +2,12 @@
 import { Box, Stack } from '@mui/system'
 
 // Local Import
-import './Page.css'
+import './Desktop.css'
+import './Mobile.css'
 import Button from 'components/Button'
 import Header from 'components/Header'
 import Input from 'components/Input'
-import { H1, H6, H7, Para, Text, Text1 } from 'components/Typography'
+import { H1, H6, H7, Para, Text } from 'components/Typography'
 // Seeder imports
 import {
   aboutUs_Content1,
@@ -16,7 +17,6 @@ import {
   services_Info1,
   services_Info2,
   services_Info3,
-  started,
   startedNow,
 } from 'utils/Seeder'
 // Image import
@@ -32,8 +32,10 @@ import {
 } from 'utils/ImagesPath'
 import Carousel from 'components/Carousel'
 import Footer from 'components/Footer'
+import useMediaQueries from 'hooks/useMediaQueries'
 
 const LandingPage = () => {
+  const isMobile = useMediaQueries('mobile')
   return (
     <>
       <Header />
@@ -52,18 +54,25 @@ const LandingPage = () => {
             <Button className='heroButton'>Get Started</Button>
           </Box>
         </Stack>
-        <img src={header_Oval} alt='hero img' className='hero_Oval' />
-        <Stack className='oval_Copy'>
-          <Box className='oval_ImageBox'>
-            <img src={path} alt='path oval' className='oval_Image' />
-          </Box>
-          <h1 className='oval_Title'>39%</h1>
-          <span className='oval_Span'>Conversion</span>
-        </Stack>
+        {!isMobile && (
+          <>
+            <img src={header_Oval} alt='hero img' className='hero_Oval' />
+            <Stack className='oval_Copy'>
+              <Box className='oval_ImageBox'>
+                <img src={path} alt='path oval' className='oval_Image' />
+              </Box>
+              <h1 className='oval_Title'>39%</h1>
+              <span className='oval_Span'>Conversion</span>
+            </Stack>
+          </>
+        )}
       </Box>
 
       {/* About us 1 */}
-      <Stack direction='row' className='aboutUs1_Container'>
+      <Stack
+        direction={isMobile ? 'column' : 'row'}
+        className='aboutUs1_Container'
+      >
         <Stack spacing={3} className='paperContainer'>
           {aboutUs_Info.map((paper, index) => (
             <Box key={index} className='paper'>

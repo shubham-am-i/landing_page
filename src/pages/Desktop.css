@@ -58,7 +58,7 @@
   width: 2.688rem;
   height: 2.688rem;
   padding-top: 0.6rem;
-  padding-left: .6rem;
+  padding-left: 0.6rem;
 }
 .oval_Image {
   width: 1.3rem;
@@ -77,7 +77,7 @@
 .oval_Span {
   font-family: CircularStd-Bold;
   font-size: 1rem;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
 }
 
 /* About Us 1 */
