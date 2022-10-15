@@ -1,6 +1,7 @@
 import { Stack } from '@mui/system'
 import { H6, Text, Text1 } from './Typography'
-
+import { AiFillTwitterCircle, AiFillGoogleCircle } from 'react-icons/ai'
+import { FaFacebook } from 'react-icons/fa'
 const Footer = () => {
   return (
     <Stack direction='row' spacing={10} className='footer_Container'>
@@ -10,6 +11,11 @@ const Footer = () => {
           With lots of unique blocks, you can easily build a page without
           coding.
         </Text>
+        <Stack direction='row' spacing={1} style={{ alignItems: 'center' }}>
+          <AiFillTwitterCircle size={25} />
+          <FaFacebook size={23} />
+          <AiFillGoogleCircle size={25} />
+        </Stack>
       </Stack>
       <Stack spacing={2} className='fontColor'>
         <Text1>About</Text1>

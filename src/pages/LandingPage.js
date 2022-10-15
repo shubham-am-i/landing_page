@@ -6,7 +6,7 @@ import './Page.css'
 import Button from 'components/Button'
 import Header from 'components/Header'
 import Input from 'components/Input'
-import { H1, H6, H7, Para, Text } from 'components/Typography'
+import { H1, H6, H7, Para, Text, Text1 } from 'components/Typography'
 // Seeder imports
 import {
   aboutUs_Content1,
@@ -25,6 +25,8 @@ import {
   aboutus_oval,
   features_Image,
   features_Oval,
+  header_Oval,
+  path,
   started_Now,
   started_Oval,
 } from 'utils/ImagesPath'
@@ -49,6 +51,14 @@ const LandingPage = () => {
             <Input className='textalign' />
             <Button className='heroButton'>Get Started</Button>
           </Box>
+        </Stack>
+        <img src={header_Oval} alt='hero img' className='hero_Oval' />
+        <Stack className='oval_Copy'>
+          <Box className='oval_ImageBox'>
+            <img src={path} alt='path oval' className='oval_Image' />
+          </Box>
+          <h1 className='oval_Title'>39%</h1>
+          <span className='oval_Span'>Conversion</span>
         </Stack>
       </Box>
 

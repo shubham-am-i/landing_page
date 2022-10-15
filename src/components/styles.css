@@ -52,6 +52,7 @@
   top: 1.13rem;
   left: 2rem;
   color: #19191b !important;
+  z-index: 2;
 }
 
 /********************** Typography **********************/

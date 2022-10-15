@@ -16,6 +16,7 @@
 .heroBox {
   background: url('https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/a1a96c5b-b124-4f84-b3e9-1ce6b42eda7b');
   background-repeat: no-repeat;
+  position: relative;
 }
 .heroStack {
   /* padding: 13.125rem 46rem 13.5rem 13.563rem; */
@@ -31,6 +32,52 @@
 }
 .textalign {
   padding-left: 3.43rem !important;
+}
+.hero_Oval {
+  position: absolute;
+  top: 5.938rem;
+  right: 29.313rem;
+}
+.oval_Copy {
+  position: absolute;
+  top: 26.75rem;
+  right: 6.488rem;
+  width: 11.813rem;
+  height: 11.813rem;
+  /* padding: 1.625rem 1.188rem 1.813rem 3.25rem; */
+  box-shadow: 0 47px 49px 0 rgba(65, 62, 101, 0.3);
+  background-color: #5454d4;
+  border-radius: 50%;
+  color: white !important;
+  justify-content: center;
+  align-items: center;
+}
+.oval_ImageBox {
+  background-color: #7070f4;
+  border-radius: 50%;
+  width: 2.688rem;
+  height: 2.688rem;
+  padding-top: 0.6rem;
+  padding-left: .6rem;
+}
+.oval_Image {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.oval_Title {
+  font-family: CircularStd-Bold;
+  font-size: 3.938rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: -1.97px;
+  text-align: center;
+  color: #fff;
+}
+.oval_Span {
+  font-family: CircularStd-Bold;
+  font-size: 1rem;
+  margin-top: -.5rem;
 }
 
 /* About Us 1 */

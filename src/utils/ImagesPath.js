@@ -30,3 +30,9 @@ export const started_Now =
 
 export const started_Oval =
   'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/69552922-85c2-4612-a133-ad684cedd7d4'
+
+export const header_Oval =
+  'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/48140d33-0ff3-4d76-a6db-d261a3b61c44'
+
+export const path =
+  'https://charitism-campaigns.s3.ap-south-1.amazonaws.com/charitism-v2/campaign-details/a30546f0-7ba2-4ba9-a048-242f88aff621'
