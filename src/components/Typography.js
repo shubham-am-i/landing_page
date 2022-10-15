@@ -1,7 +1,7 @@
 import './styles.css'
 
 export const H1 = (props) => {
-  const { children, className, color } = props
+  const { children, className } = props
   return <h1 className={`H1Bold ${className}`}>{children}</h1>
 }
 export const Para = (props) => {

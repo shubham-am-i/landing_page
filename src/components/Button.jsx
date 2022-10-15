@@ -1,18 +1,22 @@
 import './styles.css'
 import PropTypes from 'prop-types'
 
-const Button = props => {
-  const { variant, isDisabled, children, size, className } = props
+const Button = (props) => {
+  const { isDisabled, children, className } = props
 
   // button handler
-  const buttonHandler = e => {
+  const buttonHandler = (e) => {
     console.log(e.target.value)
   }
 
   const disabled = isDisabled === true ? true : false
   return (
-    <button className={`button ${className}`} disabled={disabled} onClick={buttonHandler}>
-      <span className="button-text">{children}</span>
+    <button
+      className={`button ${className}`}
+      disabled={disabled}
+      onClick={buttonHandler}
+    >
+      <span className='button-text'>{children}</span>
     </button>
   )
 }

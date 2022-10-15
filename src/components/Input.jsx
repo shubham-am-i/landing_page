@@ -8,23 +8,30 @@ import { PropTypes } from 'prop-types'
 import './styles.css'
 import { email } from 'utils/ImagesPath'
 
-const Input = props => {
-  const { title, placeholder, defaultText, isDisabled, size, isRequired, description, className } =
-    props
+const Input = (props) => {
+  const {
+    title,
+    placeholder,
+    defaultText,
+    isDisabled,
+    isRequired,
+    description,
+    className,
+  } = props
   const [text, setText] = useState(defaultText)
 
   const disabled = isDisabled === true ? true : false
   // const inputSize = size === 'small' ? 'small_size' : 'large_size'
   const required = isRequired === true ? true : false
 
-  const handleText = e => setText(e.target.value)
+  const handleText = (e) => setText(e.target.value)
   return (
     <>
-      <label className="labelStyles">
+      <label className='labelStyles'>
         {title}
 
-        <section className="section">
-          <img src={email} alt="email" className="email-84" />
+        <section className='section'>
+          <img src={email} alt='email' className='email-84' />
           <input
             type={text.length ? 'search' : 'text'}
             value={text}
